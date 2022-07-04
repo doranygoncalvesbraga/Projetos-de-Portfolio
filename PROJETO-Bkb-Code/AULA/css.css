@@ -1,0 +1,53 @@
+MARGIN
+
+body{
+
+    /* MARGIN: margem aplicada fora do elemento */
+    /* margem para cima */
+        margin-top: 100px ;
+    
+    /* margem para baixo */
+        margin-bottom:100px ;
+    
+    /* margem para esquerda */
+        margin-left: 100px; ;
+    
+    /* margem spara direita */
+        margin-left: 100px ;
+    
+    /* margem cima, direita, baixo, esquerda */
+        margin:10px 200px 20px 100px  ;
+    }
+
+PADDING
+
+body{
+    /* PADDING: margem aplicada dentro do elemento */
+    /* margem para cima */
+        padding-top: 100px ;
+    
+    /* margem para baixo */
+        padding-bottom:100px ;
+
+    /* margem para esquerda */
+        padding-left: 100px; ;
+
+    /* margem spara direita */
+        padding-left: 100px ;
+
+    /* margem cima, direita, baixo, esquerda */
+        padding:10px 200px 20px 100px
+}
+
+
+.text {
+
+    font-size: 12px;
+    color: aliceblue;
+    text-align: center;
+
+    background-color: aquamarine;
+    width: 300px;
+    height: 300px;
+
+}

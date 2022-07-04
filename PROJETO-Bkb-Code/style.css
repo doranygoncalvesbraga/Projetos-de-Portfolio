@@ -1,0 +1,203 @@
+body{}
+/* APLICANDO ESTILO EM TODO DOCUMENTO*/
+body{
+    background-color: #f5f3f0;
+    font-family: 'Nunito', sans-serif
+}
+
+/* DELIMITANDO CONTAINER*/
+.container{
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.cabecalho .container{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+/* APLICANDO ESTILO NA IMAGEM DO BANNER*/
+.banner img{
+    width: 100%;
+}
+
+/* APLICANDO ESTILO NA SESSÃO DE PRODUTOS */
+.secaoProdutos{
+    margin-top: 74px;
+}
+.secaoProdutos .produtoLista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.secaoProdutos .produtosCard{
+    background-color: #ffff;
+    width: 233px;
+    text-align: center;
+    padding: 22px 28px;
+    border: 2px solid #f5ebd0;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    
+}
+.secaoProdutos .produtosCard img{}
+.secaoProdutos .produtosCard h3{
+    color: #502314;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 28px auto;
+    min-height: 40px;
+    max-width: 160px;
+}
+.secaoProdutos .produtosCard p{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 28px;
+}
+.secaoProdutos .produtosCard button{
+    background: #f5f3f0;
+    border: none;
+    width: 177px;
+    height: 41px;
+    color: #2d2d2d;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif
+}
+/* RODAPÉ */
+
+.carrinho .infoResumo{
+    background: #502314;
+    border-radius: 32px 32px 0px 0px;
+    padding: 20px 0;
+}
+.carrinho .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrinho .infoUsuario{
+    
+
+}
+.carrinho .infoUsuario h3{
+    font-weight: 500;
+    font-size: 32px;
+    color: #ffff;
+    padding-bottom:18px ;
+}
+.carrinho .infoUsuario p{
+    font-style: italic;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 30px;
+    color: #ffff;
+    padding-top: ;
+}
+.carrinho .infoPreco{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #ffff;
+     
+}
+
+.carrinho{
+    background-color: #ffff;
+}
+.carrinho .resumoPedido{
+    width: 80%;
+}
+.carrinho .resumoPedido .produtoLista{}
+.carrinho .resumoPedido .produtosCard{
+    background: #f5f3f0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 30px ;
+
+}
+.carrinho .resumoPedido .produtosCard .infoNome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.carrinho .resumoPedido .produtosCard .infoNome img{
+    width: 150px;
+
+}
+.carrinho .resumoPedido .produtosCard .infoNome p{
+    color: #502314;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+.carrinho .resumoPedido .produtosCard .infoPreco{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.carrinho .resumoPedido .produtosCard .infoPreco p{
+    color: #2d2d2d;
+    font-size: 20px;
+    font-weight: 200;
+    font-style: italic;
+}
+.carrinho .resumoPedido .produtosCard .infoPreco img{
+    width: 25px;
+    align-items:center;
+}
+.carrinho .resumoPedido .produtosCard .infoPreco button{
+    background: #dad9d8;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin-left: 43px;
+    
+
+}
+
+
+.btnFinalizarPedido{
+    width: 20%;
+}
+
+.btnFinalizarPedido button{
+    width: 219px;
+    height: 51px;
+    background: #db3b1d;
+    border: 4px solid #db3b1d;
+    border-radius: 5px;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffff;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 18px;
+
+}
+
+.btnFinalizarPedido button ~ button{
+    background: #ffff;
+    border: 4px solid #db3b1d;
+    color: #db3b1d;
+    
+    
+}
+
+/*.carrinho .container{
+    display: flex;
+    justify-content: space-between;
+}*/

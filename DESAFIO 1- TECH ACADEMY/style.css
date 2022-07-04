@@ -1,0 +1,211 @@
+
+html{
+    font-size: 10px ;
+    scroll-behavior: smooth;
+    background: scroll #0c0b0b;
+}
+
+.inicio-container {
+    min-height:  100vh; /* altura minima será largura total da página/ viewport*/
+    width: 100%;
+    display: flex; /* responsavidade*/
+    align-items: center;
+    justify-content: center;
+}
+
+/*ESTILO MENU/NAV*/
+
+.Menu{
+    min-width: 100vh;
+    background: #35e2f7;
+    padding: 20px 0;
+    margin: 0;
+    }
+
+.menu-container {
+    float: right;
+    margin-right: 10px;
+}
+
+   
+.menu-nav {
+    display: block;
+    padding: 3px; /* aumenta a área do botão, clicável, melhor usabilidade*/
+    text-decoration: none; /* remove o estilo sublinhado link*/
+    color: #fff;
+    font-size: 2rem;
+    float: right;
+    margin-right: 10px;
+}
+.li{
+    float: right;
+    margin-right: 10px;
+}
+
+
+/* INICIO*/
+
+.abertura {
+    height: 720px;
+ }
+
+.letraD {
+    display:block;
+    
+}
+
+/* SESSÃO APRESENTAÇÃO*/
+ #apresentacao {
+     background-image: url(./Imagens/BinarioB.png);
+     background-size: cover;
+     background-position: top center;
+     position: relative; /* responsavidade*/
+}
+
+ #apresentacao h1 {
+        
+     /* display: block; */
+     width: fit-content;     
+     font-family: 'Syncopate', sans-serif;
+     text-transform: uppercase;
+     font-size: 3rem;
+     font-weight: 200;
+     position: relative;
+     color: transparent;
+}
+
+#apresentacao .text_reveal_name {
+    animation-delay: 2.3s;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 3.3rem;
+    animation-direction: normal ;
+    animation: text_reveal_rosa 1.5s  ease forwards;
+    
+}
+#apresentacao .text_reveal_brand{
+    animation-delay: 1.6s;
+    white-space: nowrap;
+    overflow: hidden;
+    animation-direction: normal;
+    animation: text_reveal 2.3s  ease forwards;
+    
+    
+}
+#apresentacao .fullStack {
+    animation-delay: 1.6s;
+    white-space: nowrap;
+    overflow: hidden;
+    animation-direction:normal;
+    animation: text_reveal 2.3s ease forwards;
+   
+}
+
+ .cta {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 0.9rem;
+    color: #1f1e1e;
+    background:#fcc641 ;
+    border-radius: 1rem;
+    font-size: 1.7rem;
+    font-family: 'Syncopate', sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-left: 18rem;
+    margin-bottom: 10rem;
+}
+
+#apresentacao .cta:hover{
+    background:#fb0d5f;
+    font-weight: 600;
+    color: #fff;
+}
+
+#apresentacao h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    animation: text_reveal 2s ease;
+    animation-delay: .5s;
+    background-color: t#0c0b0b;
+
+}
+
+.principal .sobre-container {
+    
+
+}
+.foto{
+    border-radius: 50%;
+}
+.projetos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.projetos .projetos-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.projetos p {
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    
+
+/* SESSÃO KEYFRAMES */
+
+@keyframes text_reveal{
+  
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+        color: #fff 
+    }
+}
+
+@keyframes text_reveal_rosa{
+  
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+        color: #fb0d5f 
+    }
+}
+
+/* Media Query */
+@media only screen and (min-width: 768px) {
+    #portfolio .project-item {
+        flex-direction: row;
+        height: 400px;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    #portfolio .all-projects .project-info{
+        height: 100%
+    }
+    #portfolio .all-projects .project-img{
+        height: 100%
+    }
+    #portfolio .project-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
