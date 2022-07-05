@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Fomulário- prática CSS</title>
+</head>
+<body>
+    <H1>Contato</H1>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+               <label for="nome" class="obrigatorio"> Nome:* </label> 
+               <input tapy="text" name="nome" id="nome" placeholder="Nome Completo" required>
+            </div>
+            <div>
+                <label for="email" class="obrigatorio"> E-mail:*</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@email.com" required>
+
+            </div>
+        </fieldset>
+        <div>
+            <label for="assunto" > Assunto: </label>
+            <select name="assunto" id="assunto">
+                <option value="" selected ></option>
+                <option value="reclamacao">Reclamação </option>
+                <option value="sugestao">Sugestão </option>
+                <option value="elogio">Elogio</option>
+                <option value="outro">Outro</option>
+            </select>
+        </div>
+        <!-- SEGUNDA FORMA DE FAZER:
+       <fieldset>
+            <legend>Assunto</legend>
+            <input type="radio" name="assunto" value="reclamacao" id="reclamacao">
+            <label for="reclamacao">Reclamação</label>
+            <input type="radio" name="assunto" value="sugestao" id="sugestao">
+            <label for="sugestao">Sugestão</label>
+            <input type="radio" name="assunto" value="elogio" id="elogio">
+            <label for="elogio">Elogio</label>
+            <input type="radio" name="assunto" value="outro" id="outro">
+            <label for="outro">Outro</label>
+        </fieldset>
+        --> 
+        <div>
+            <label for="mensagem" class="obrigatorio">Mensagem:*</label>
+            <textarea name="mensagem" id="mensagem"placeholder="Digite a mensagem" required></textarea>
+        </div>
+        <div class="cadastro">
+            <input type="checkbox" nome="cadastro" id="cadastro">
+            <label for="cadastro"> Desejo receber e-mails informativos</label>
+        </div>
+        <div class="cadastro">
+            <input type="submit" value="Enviar Mensagem"
+        </div>
+    </form>
+</body>
+</html>
