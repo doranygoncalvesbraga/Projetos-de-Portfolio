@@ -5,8 +5,13 @@
         <!-- padrão caracteres e acentos-->
         <meta charset="UTF-8">
 
-         <!-- Resposavidade-->
+         <!-- Responsavidade-->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Incorporando a fonte Yeseva One link Google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
 
         <!-- Incorporando a fonte Roboto link Google-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +23,7 @@
     </head>
 
     <body>
-        <!-- div dentro da div, usada para centralizar o conteúdo-->
+        <!-- div dentro da div, usada para centralizar o conteúdo BARRA INFORMAÇÕES-->
         <div class="superinfo-bg">
             <div class="superinfo">
                 <p> Seg | sexta - 14:00 às 18:00 </p>
@@ -33,16 +38,16 @@
                 <div class="menu-logo">
                     <a href="./index.html">FlexBLOG </a>
                 </div>
+                <!-- NAVEGAÇÃO-->
+                <nav class="menu-nav">
+                    <ul>
+                        <li> <a href="#sobre"> Sobre </a></li>
+                        <li> <a href="#Produtos"> Produtos </a></li>
+                        <li> <a href="#Preco"> Preço </a></li>
+                        <li> <a href="#Qualidade"> Qualidade </a></li>
+                    </ul>                
+                </nav>
             </div>
-        <!-- NAVEGAÇÃO-->
-            <nav>
-                <ul>
-                    <li> <a href="#sobre"> Sobre </a></li>
-                    <li> <a href="#Produtos"> Produtos </a></li>
-                    <li> <a href="#Preco"> Preço </a></li>
-                    <li> <a href="#Qualidade"> Qualidade </a></li>
-                </ul>                
-            </nav>
         </header>
 
         <h1 class="introducao"> Novos Valores e <br> Propriedades de css </h1>
@@ -54,10 +59,10 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro earum cum, tempora fugit ullam aspernatur blanditiis vitae provident eaque natus nulla voluptate commodi rem sequi perspiciatis dignissimos architecto consequuntur doloremque.</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro earum cum, tempora fugit ullam aspernatur blanditiis vitae provident eaque natus nulla voluptate.
             </div>
-            <div>
+            <div class="sobre-img">
                <img src="./sobre1.jpg" alt="sobre1">
             </div>
-            <div>
+            <div class="sobre-img">
                 <img src="./sobre2.jpg" alt="sobre2">
              </div>
         </section>
@@ -82,7 +87,7 @@
         </section>
 
         <!-- SESSÃO PREÇOS -->
-        <section class="preço" id="preco">
+        <section class="preco" id="preco">
 
             <div class="preco-item">
                 <h2>Cobre</h2>
@@ -97,7 +102,7 @@
             </div>
 
             <div class="preco-item">
-                <h2>Cobre</h2>
+                <h2>Prata</h2>
                 <span><sup>R$</sup>39</span>
                 <ul>
                     <li>Planos Ilimitados</li>
@@ -110,7 +115,7 @@
             </div>
 
             <div class="preco-item">
-                <h2>Cobre</h2>
+                <h2>Ouro</h2>
                 <span><sup>R$</sup>79</span>
                 <ul>
                     <li>Planos Ilimitados</li>
@@ -146,6 +151,10 @@
                 <h2> Sustentável </h2>
                 <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.  </p>
             </div>
+            <div class="qualidade-item">
+                <h2> Econômico </h2>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.  </p>
+            </div>
         </section>
 
         <!-- SESSÃO NEWSLETTER -->
@@ -153,11 +162,11 @@
             <div class="newsletter-info">
                 <h1> newsletter</h1>
                 <p>Assine e fique por dentro das novidades </p>
+                <form class="newsletter-form">
+                    <input type="text" placeholder="Seu e-mail">
+                </form>
+                <button type="submit"> Assinar </button>
             </div>
-            <form class="newsletter-form">
-                <input type="text" placeholder="Seu e-mail">
-            </form>
-            <button type="submit"> Assinar </button>
         </section>
         
         <!-- SESSÃO RODAPÉ -->
