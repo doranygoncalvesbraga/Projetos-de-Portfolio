@@ -204,6 +204,7 @@ img{
 }
 
 .preco-item h2 {
+    text-transform: uppercase;
     font-size: 3em;
     color: #817f7f;
     text-align: center;
